@@ -37,5 +37,9 @@ comes your way from using Radieschen.
 I may fix bugs if I am interested and they are suitably well documented. No guarantees. 
 I am overworked enough. 
 
+## Why this Name?
+
+This name came about because I think that vegetable names are underused as names for software artifacts. 
+Also: it is ridiculous. 
 
 
