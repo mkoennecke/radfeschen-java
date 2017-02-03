@@ -1,0 +1,18 @@
+\documentclass[final,nototal,pdf,mark]{prosper}
+\title{!!TITLE!!}
+\author{Mark K\"onnecke}
+\institution{Laboratory for Neutron Scattering\\ Paul Scherrer Institute}
+\Logo{\includegraphics[width=4cm]{lnslogo.eps}}
+
+\begin{document}
+\maketitle
+
+!!CONTENT!!
+
+\end{document}
+
+
+
+
+
+

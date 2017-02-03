@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head><title>FormatHelp.radi</title>
+<base href="file:///afs/psi.ch/user/k/koennecke/tmp/">
+<LINK rel="stylesheet" type="text/css" href="radi.css"></head><body>
+<h1>Formatting Help </h1>
+<p>The wiki markup used by Radieschen has been compiled from the best markup ideas used in other wiki systems. No surprises here. Please note that 
+the html renderering is done by Swing's standard JEditorPane widget. This is a limitation espcially when displaying complex external WWW-pages.
+</p><hr>
+
+<h2>Headers <a name="#hd"></a> </h2>
+<pre>= Level 1 header = 
+== Level 2 Header ==
+=== Level 3 Header ===
+==== Level 4 header ====
+===== Level 5 Header =====</pre>
+<p>gives:
+</p><h1>Level 1 Header </h1>
+<h2>Level 2 Header </h2>
+<h3>Level 3 Header </h3>
+<h4>Level 4 Header </h4>
+<h5>Level 5 Header </h5>
+<p>Please note that the = must be at the start of the line; there must be a space between the 
+last = and the header text and there must be a line separator after the terminating = at the 
+end of the header.
+</p><hr>
+<h2>Paragraphs <a name="#par"></a> </h2>
+<p>This is a paragraph. Please note that a paragraph <b>MUST</b> start at the first character of a line. Otherwise it might be treated as the continuation to a preceeding list item.
+</p><p>This is a second paragraph. Paragraphs are separated by empty lines. 
+</p><p>Text between two lines starting with :: appears centered. For example:
+</p><pre>
+::
+This is centered 
+::</pre>
+<p>will give:
+</p><center>
+<p>This is centered
+</p></center>
+
+
+<p>Text between two lines starting with -- will be treated as a quote. For 
+ example:
+</p><pre>
+--
+ This is a quote from an ancient master of wisdom
+--</pre>
+<p>will yield:
+</p><blockquote>
+ This is a quote from an ancient master of wisdom
+</blockquote>
+<hr>
+<h2>Text Embellishments </h2>
+<ul><li>Enclosing text in '' or ** makes the text bold. Example: ''fat'' gives <b>fat</b>. 
+</li><li>Enclosing text in ~~ puts text into italics. Example: ~~italy~~ makes <i>italy</i>.
+</li><li>Enclosing text in __ puts text in subscript. Example __sub__script yields <sub>sub</sub>script.
+</li><li>Enclosing text in ^ puts text in superscript. Example: ^super^script makes <sup>super</sup>script.
+</li><li>Coloured text can be produced by enclosing the text into ~~colourname: 
+ and ~~. Example: ~~red:This is red~~ yields: <font color="red">This is red</font> Only the standard 
+ html colours are supported.
+</li></ul>
+<p>Forced line breaks within a paragraph can be obtained by giving %%%.
+</p><hr>
+<h2>Links </h2>
+<ul><li>A link is created by enclosing the URL in []. Example: [http://www.psi.ch] yields <a href="http://www.psi.ch">http://www.psi.ch</a>. All URL's not starting with
+  either http or ftp are treated as wiki internal links. Page creation happens by creating a new wiki link in some page. 
+</li><li>Optionally the link may be given a differerent name then the URL. The the URL must be followed by a | and the name within the []. Example:
+ [http://www.psi.ch|PSI] gives <a href="http://www.psi.ch">PSI</a>. 
+</li><li>images can be included by enclosing their URL in [[ ]]; double square brackets. This looks like [[path-to-image]].  
+</li></ul><hr>
+<h2>Lists </h2>
+<p>Nesting differerent list types is not supported. Extending the items text on another line is supported, <b>but</b> the text must not start at the 
+ first character of the line.
+</p><h3>Itemized Lists </h3>
+<pre>
+* noeff
+** naff
+* niff</pre>
+<p>gives 
+</p><ul><li>noeff
+<ul><li>naff
+</li></ul></li><li>niff
+</li></ul><p>The * character must be at the start of the line; the item text must be separated by a space. Deeper nesting is expressed by giving more *. 
+</p><h3>Ordered Lists </h3>
+<pre>
+# noeff
+## naff
+# niff</pre>
+<p>gives 
+</p><ol><li>noeff
+<ol><li>naff
+</li></ol> </li><li>niff
+</li></ol> <p>The # character must be at the start of the line; the item text must be separated by a space. Deeper nesting is expressed by giving more #. 
+</p><h3>Definition Lists </h3>
+<pre>
+;niff: niff text
+;noeff: noeff text</pre>
+<p>yields
+</p><dl><dt>niff
+<dd> niff text
+</dd><dt>noeff
+<dd> noeff text
+</dd></dl><p>The ; must be at the start of the line; The definiton text follows after the :. Nesting definition lists is not allowed.
+</p><hr>
+<h2>Tables </h2>
+<p>Simple tables can be done with ||. Example:
+</p><pre>
+|| t1 || t2 || t3 ||
+|| t4 || t5 || t6 ||
+|||span 2 || t7||</pre>
+<p>creates
+</p><table border="1"><tr><td> t1 </td><td> t2 </td><td> t3 </td></tr>
+<tr><td> t4 </td><td> t5 </td><td> t6 </td></tr>
+<tr><td colspan="2"> span 2 </td><td> t7</td></tr>
+</table><p>Please note the spaces around the table elements. The table row must be terminated with a return after the ||. Elements spanning multiple columns can be created by adding additional | to 
+the column separator ||.
+</p><hr>
+<h2>Rules </h2>
+<p>Two types of horizontal rules are supported:
+</p><pre>
+----</pre>
+<p>makes a simple horizontal line like:
+</p><hr>
+<pre>
+------</pre>
+<p>makes an emphasized horizontal rule like:
+</p><hr size="5">
+<h2>Preformatted Text and Escapes <a name="#pre"></a> </h2>
+<p>Single characters can be escaped by preceeding them with a backslash. This is useful when using those sysmbols which are special to wiki markup in text. 
+Text enclosed in {{{  }}} is treated as preformatted text. 
+</p><hr>
+<h2>Script generated Content </h2>
+<p>It is possible to use the beanshell scripting language within Radieschen files in order to generate content dynamically. This works 
+similar to JSP. The follwoing syntax is supported:
+</p><dl><dt>&lt;% script %>
+<dd>execute script and insert output. The output must be formatted as Radieschen markup. 
+</dd><dt>&lt;%=var %>
+<dd>insert value of variable named var. 
+</dd><dt>&lt;%! script%>
+<dd>execute script and print nothing. 
+</dd></dl><hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
+

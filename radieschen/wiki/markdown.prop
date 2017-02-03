@@ -1,0 +1,56 @@
+r#----------------------------------------------------
+# Output generated for various wiki tags to markdown
+#----------------------------------------------------
+startheader1=#
+startheader2=##
+startheader3=###
+startheader4=####
+startheader5=#####
+endheader1=\n
+endheader2=\n
+endheader3=\n
+endheader4=\n
+endheader5=\n
+parstart=\n
+parend=\n
+startsuper=^
+endsuper=^
+startsub=~
+endsub=~
+startbold=**
+endbold=**
+startital=<i>
+endital=</i>
+startpre=~~~~
+endpre=~~~~\n
+startul=
+endul=
+startol=
+endol= 
+startolitem=1. 
+endolitem=
+startulitem=* 
+endulitem=
+startdef=\n
+enddef=\n
+defitem=**
+defitemclose=**\n
+defdata=
+defdataclose=
+tablestart=<table border=\"1\">
+endtable=</table>
+tablerowstart=<tr><td>
+tablesep=</td><td>
+tablerowmultistart=<tr><td colspan=\"%d\">
+tablemultisep=</td><td colspan=\"%d\">
+tablerowend=</td></tr>
+rule=---
+strongrule=***
+linebreak=\n
+startcenter=<center>
+endcenter=</center>
+startquote=<blockquote>
+endquote=</blockquote>
+endcolour=</font>
+
+

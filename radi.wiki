@@ -1,0 +1,13 @@
+1 Radieschen Test
+Dies ist ein test fuer Wiki markup
+* erstes item
+* zweites Item
+* drittes [ItemFile]
+* viertens http://www.psi.ch
+Dies ist mehr sinnloser Text im {link: PSI|http//www.psi.ch} {link}
+{code}
+  D i e s    i s t   p r e f o r matted
+{code}
+
+
+{list-of-macros}

@@ -1,0 +1,56 @@
+r#----------------------------------------------------
+# Output generated for various wiki tags to html
+#----------------------------------------------------
+startheader1=<h1>
+startheader2=<h2>
+startheader3=<h3>
+startheader4=<h4>
+startheader5=<h5>
+endheader1=</h1>
+endheader2=</h2>
+endheader3=</h3>
+endheader4=</h4>
+endheader5=</h5>
+parstart=<p>
+parend=</p>
+startsuper=<sup>
+endsuper=</sup>
+startsub=<sub>
+endsub=</sub>
+startbold=<b>
+endbold=</b>
+startital=<i>
+endital=</i>
+startpre=<pre>
+endpre=</pre>
+startul=<ul>
+endul=</ul>
+startol=<ol>
+endol=</ol> 
+startolitem=<li>
+endolitem=</li>
+startulitem=<li>
+endulitem=</li>
+startdef=<dl>
+enddef=</dl>
+defitem=<dt>
+defitemclose=
+defdata=<dd>
+defdataclose=</dd>
+tablestart=<table border=\"1\">
+endtable=</table>
+tablerowstart=<tr><td>
+tablesep=</td><td>
+tablerowmultistart=<tr><td colspan=\"%d\">
+tablemultisep=</td><td colspan=\"%d\">
+tablerowend=</td></tr>
+rule=<hr>
+strongrule=<hr size=\"5\">
+linebreak=<br>
+startcenter=<center>
+endcenter=</center>
+startquote=<blockquote>
+endquote=</blockquote>
+endcolour=</font>
+
+

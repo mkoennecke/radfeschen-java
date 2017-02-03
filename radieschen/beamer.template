@@ -1,0 +1,26 @@
+\documentclass{beamer}
+\usepackage{beamerthemesplit}
+\usepackage{graphics}
+\logo{\includegraphics[height=1cm]{psi_logo_white.png}}
+\usetheme{Pittsburgh}
+\usecolortheme{dove}
+\beamertemplatenavigationsymbolsempty
+\setbeamertemplate{footline}[frame number]
+\definecolor{myback}{RGB}{175,238,238}
+\setbeamercolor{structure}{bg=myback}
+
+\title{!!TITLE!!}
+\author{Mark K\"onnecke }
+\institute{Paul Scherrer Institute\\Switzerland }
+\date{\today} 
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+!!CONTENT!!
+
+\end{document}
+

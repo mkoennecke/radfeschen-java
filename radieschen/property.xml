@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dialog title="Property Editor" size="300,200" 
+	 layout="BorderLayout" background="white">
+<label constraints="BorcerLayout.NORTH"
+  text="You must confirm edits with a return in the table cell!"/>	 
+<panel constraints="Borderlayout.CENTER">
+	<scrollpane>
+		<table id="proptable"/>
+	</scrollpane>
+</panel>
+<panel constraints="Borderlayout.SOUTH">
+  <hbox>
+     <button label="OK" action="propertyAction"/>
+     <button label="Cancel" action="propertyAction"/>
+   </hbox>
+ </panel>
+</dialog>

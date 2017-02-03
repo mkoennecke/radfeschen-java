@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<jardesc>
+    <jar path="/afs/psi.ch/user/k/koennecke/mark/workspace/Radieschen/radieschen.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Radieschen/radieschen.jardesc" exportErrors="false" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=Radieschen/&lt;radieschen{RadiMain.java[RadiMain" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="true" exportOutputFolder="false">
+        <javaElement handleIdentifier="=Radieschen/&lt;radieschen"/>
+        <javaElement handleIdentifier="=Radieschen/&lt;radieschen.wiki"/>
+    </selectedElements>
+</jardesc>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp codebase="http://lns00.psi.ch/misc/wstart" href="radieschen.jnlp">
+  <information>
+    <title>Radieschen Personal Wiki</title>
+    <vendor>Mark.Koennecke@psi.ch</vendor>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.4+" initial-heap-size="64M" maximum-heap-size="256M"/>
+    <jar href="radieschen.jar"/>
+    <jar href="commons-io-1.2.jar"/>
+    <jar href="swixml.jar"/>
+    <jar href="jdom.jar"/>
+    <jar href="bsh-2.0b4.jar"/>
+  </resources>
+  <application-desc main-class="radieschen.RadiMain"/>
+  <security>
+  <all-permissions/>
+  </security>
+</jnlp>

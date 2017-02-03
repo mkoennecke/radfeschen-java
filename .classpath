@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/afs/psi.ch/user/k/koennecke/mark/workspace/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="/afs/psi.ch/user/k/koennecke/mark/workspace/lib/swixml.jar"/>
+	<classpathentry kind="lib" path="/afs/psi.ch/user/k/koennecke/mark/workspace/lib/commons-io-1.2.jar"/>
+	<classpathentry kind="lib" path="/afs/psi.ch/user/k/koennecke/mark/workspace/lib/bsh-2.0b4.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

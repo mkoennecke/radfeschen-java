@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html><head><title>RadiHelp.radi</title>
+<base href="file:///afs/psi.ch/user/k/koennecke/mark/workspace/Radieschen/radieschen/">
+<LINK rel="stylesheet" type="text/css" href="radi.css"></head><body>
+<h2>Radieschen Help </h2>
+<p>Radieschen is a little personal wiki system. You can view and edit
+wiki pages. This can be used as a small personal database, for todo
+list, for keeping notes on anything and everyting. The only limit is
+your imagination. All wiki pages are stored in a directory on your very own
+file system. Both the editor and the HTML rendering system make use of
+standard Java swing components. This implies that editing facilities
+and HTML display is somehwat limited. In order to cope with this, it
+is possible to edit pages in an external editor and to have links
+pointing outside your Radieschen wiki to be openened in a more capable
+external browser. This help text is about the usage of the Radieschen
+program, for help on formatting wiki text, see the formatting help
+items in the menus. 
+</p><hr>
+<h3>Limitations </h3>
+<p>Radieschen uses the standard swing widgets for displaying HTML. This is 
+sufficient for the Radieschen wiki. However you will frequently
+experience that external WWW-pages use technology which is not
+supported by the swing HTML widget. The workaround is to display such
+pages in an external browser. 
+</p><hr>
+<h3>General Layout </h3>
+<p>To the left there is the Radieschen logo, a search box and a list of all the
+Radieschen files in your current Radieschen directory. To the right is
+the central editing and viewing area.  Clicking on any file in the
+list will display the corresponding page in the view/edit area.  You
+can follow links by clicking on them, like in any other
+WWW-browser. There is a back button in the button bar which allows to
+go back to the previousy edited page. Radieschen is at any give time
+in one of two modes:
+</p><dl><dt>Edit Mode
+<dd> allows to edit the wiki page.
+</dd><dt>View Mode
+<dd> allows to navigate the wiki pages and displays them as
+ nicely formatted HTML.
+</dd></dl><hr>
+<h2>Menu Commands </h2>
+<h3>The Radieschen Menu </h3>
+<dl><dt>Open Radidir
+<dd> allows to open another directory with Radieschen
+ files.  The default directory is .radidir in your home directory.
+</dd><dt>Back
+<dd> moves back in the stack of displayed pages
+</dd><dt>Delete Selected Page
+<dd> deletes the page selected in the file list.
+</dd><dt>Import Media
+<dd> opens a file selector which allows to copy image files
+ into the  current Radieschen directory where they will be picked up
+ automatically when you create an image link to their name.
+</dd><dt>Edit Properties
+<dd> opens a simplistic dialog which allows to edit
+ Radieschens properties. See below for a list of Radieschens
+ properties and  their meaning.
+</dd></dl><h3>The Export Menu </h3>
+<p>Radieschen allows to export its content into a variety of formats.
+The general procedure involves:
+</p><ol><li>Display your desired start page.
+</li><li>Start the export process through one of the menu entries documented below
+</li><li>When asked, select a directory to export too.
+</li></ol> <p>Radieschen will the export the currently displayed page and all its 
+dependents into your choosen directory. Please note, that Radieschen does
+not cater for images properly as of now. The following export formats are 
+available:
+</p><dl><dt>Export HTML
+<dd> exports the currently displayed Radieschen page and
+ linked pages as HTML code into a directory which you will have to
+ choose. Thus you may use Radieschen to edit your WWW-site.
+</dd><dt>Export XHTML
+<dd> export as XHTML. As this is XML it can be transformed into 
+ almost anything through XLST transforms.
+</dd><dt>Export  Latex Article
+<dd> export to latex with article section markup.
+</dd><dt>Export  Latex Book
+<dd> export to latex with book, report section markup.
+</dd></dl><h3>The Edit Menu </h3>
+<dl><dt>Edit
+<dd> edits the currently displayed wiki page in  Radieschens editor.
+</dd><dt>Edit External
+<dd> opens the currently selected wiki page in an external 
+ editor. The editor to open is determined through a Radieschen
+ property.
+</dd><dt>Reload
+<dd> reloads  the current wiki page. Usefulke after editing with
+ an external editor.
+</dd><dt>Abort Edit
+<dd> aborts editing without saving your changes.
+</dd><dt>Save
+<dd> saves the currently edited page.
+</dd><dt>Cut
+<dd> deletes the currently selected text in edit mode.
+</dd><dt>Copy
+<dd> copies the currently selected text into the clipboard.
+</dd><dt>Paste
+<dd> pastes text from the clipboard into the currently edited text
+ at the cursor position.
+</dd></dl><h3>The Help Menu </h3>
+<dl><dt>Show Formatting Help
+<dd> shows help on how to format Radieschen wiki
+ pages.
+</dd><dt>General Help
+<dd> displays this page!
+</dd><dt>Show HTML
+<dd> shows the HTML code generated from your wiki
+ markup. Useful when debugging markup or Radieschen itself.
+</dd></dl><hr>
+<h2>Radieschen Properties </h2>
+<p>Some aspects of Radieschen can be configured through
+properties. Properties can be edited through the Radieschen/Edit
+Properties menu entry. Properties are stored in a file name .radi in
+your home directory. The following proerties are available:
+</p><dl><dt>browser
+<dd>The path to the external browser to use when opeing external
+ links in an external browser is enabled.
+</dd><dt>editor
+<dd> The path to the xternal editor to use when editing wiki text
+ externally. 
+</dd><dt>externalbrowser
+<dd> can be true or false. This property determines if
+ external links are opened in an external browser or not.
+</dd><dt>radidir
+<dd> The current database directory. 
+</dd></dl><p>Please not that you have to hit return when your are finished editing
+an entry in the property editor.
+</p><hr>
+<h2>Style Sheet Support </h2>
+<p>Radieschen supports CSS style sheets. This means: if you do not like the appearance 
+ oh Radieschen rendering, you can do something about it. Radieschen copies into each 
+database directory and into each export directory a file called radi.css with style sheet
+information. If you want another rendering, edit this file. If you do not know how to do this,
+ please consult the ample documentation on cascading style sheets available on the WWW 
+and in books.
+</p><hr> 
+<h2>Searching </h2>
+<p>The Radieschen database can be searched. Underneath the Radieschen logo at the left there 
+is text field where you may enter your search string. Hit the button <b>Go</b> besides it and a page
+with search results will magically appear. When navigating, the <b>back</b> button will not go back
+to the search results. Hit <b>Go</b> instead to get  your search results back.
+</p><p>Searching is case insensitive and uses the regular expressions implementation and syntax 
+supplied with your JDK.    
+</p><hr>
+</body></html>
+

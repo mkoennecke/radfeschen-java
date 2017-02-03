@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frame title="Radieschen Personal WiKi 10-2014" size="800,600" background="white">
+<menubar>
+  <menu text="Radieschen" mnemonic="VK_Z">
+    <menuitem text="Open Radidir" mnemonic="VK_O" Action="menuAction"/>
+    <menuitem text="Back" mnemonic="VK_B" Action="menuAction"/>
+    <menuitem text="Delete Selected Page" mnemonic="VK_D" Action="menuAction"/>
+    <menuitem text="Import Media" mnemonic="VK_I" Action="menuAction"/>
+	<checkboxmenuitem text="External Pages in External Browser" id="exBox" 
+		Action="menuAction"/>
+    <menuitem text="Edit Properties" mnemonic="VK_P" Action="menuAction"/>
+    <menuitem text="Exit" mnemonic="VK_X" Action="menuAction"/>  
+  </menu>
+  <menu text="Export" mnemonic="VK_X">
+    <menuitem text="Export RADI" mnemonic="VK_R" Action="menuAction"/>
+    <menuitem text="Export Markdown" mnemonic="VK_R" Action="menuAction"/>
+    <menuitem text="Export HTML" mnemonic="VK_H" Action="menuAction"/>
+    <menuitem text="Export XHTML" mnemonic="VK_M" Action="menuAction"/>
+    <menuitem text="Export S5" mnemonic="VK_S" Action="menuAction"/>
+    <menuitem text="Export Latex Article" mnemonic="VK_A" Action="menuAction"/>
+    <menuitem text="Export Latex Book" mnemonic="VK_B" Action="menuAction"/>
+    <menuitem text="Export Prosper" mnemonic="VK_P" Action="menuAction"/>
+    <menuitem text="Export Beamer" mnemonic="VK_E" Action="menuAction"/>
+  </menu>	
+  <menu text="Edit" mnemonic="VK_E">
+    <menuitem text="Edit" mnemonic="VK_E" Action="menuAction"/>
+    <menuitem text="Edit External" mnemonic="VK_T" Action="menuAction"/>
+    <menuitem text="Reload" mnemonic="VK_R"  Action="menuAction"/>
+    <menuitem text="Abort Edit" mnemonic="VK_A" Action="menuAction"/>
+    <menuitem text="Save" mnemonic="VK_S" Action="menuAction"/>
+    <menuitem text="Delete Line" mnemonic="VK_K" accelerator="control K" 
+            Action="menuAction"/>
+    <menuitem text="Cut"  accelerator="control X" Action="cutAction"/>
+    <menuitem text="Copy"  accelerator="control C" Action="copyAction"/>
+    <menuitem text="Paste"  accelerator="control V" Action="pasteAction"/>
+    <menuitem text="Undo"  accelerator="control Z" Action="undoAction"/>
+    <menuitem text="Redo"  accelerator="control R" Action="redoAction"/>
+  </menu>   
+  <menu text="Help" mnemonic="VK_H">
+    <menuitem text="About" mnemonic="VK_A" Action="menuAction"/>
+    <menuitem text="General Help" mnemonic="VK_G" Action="menuAction"/>
+    <menuitem text="Show Formatting Help" mnemonic="VK_H" Action="menuAction"/>
+    <menuitem text="Show HTML" mnemonic="VK_M" Action="menuAction"/>
+  </menu>
+</menubar>
+<panel Layout="FlowLayout(FlowLayout.LEFT)" constraints="Borderlayout.NORTH">
+  <toolbar orientation="horizontal" floatable="true">
+     <button label="Home" action="menuAction"/>
+     <button label="Back" action="menuAction"/>
+     <button label="Edit" action="menuAction"/>
+     <button label="Edit External" action="menuAction"/>
+     <button label="Abort Edit" action="menuAction"/>
+     <button label="Save" action="menuAction"/>
+     <button label="Reload" action="menuAction"/>
+     <button label="Show Formatting Help" action="menuAction"/>
+     <button label="Exit" action="menuAction"/>
+  </toolbar>
+ </panel>
+<panel layout="Borderlayout" constraints="BorderLayout.CENTER">	
+    <scrollpane constraints="BorderLayout.CENTER">
+        <editorpane id="eddi"/>
+     </scrollpane>
+	<panel constraints="BorderLayout.SOUTH" background="00ff00">
+    	<label id="status" text="Displaying: Start.radi"/>
+	</panel>
+</panel>	
+<panel constraints="BorderLayout.WEST" layout="BorderLayout" background="ffffff">
+   <panel constraints="BorderLayout.NORTH" layout="BorderLayout">
+	   <label constraints="BorderLayout.NORTH" icon="radieschen/radilogo.gif"/>
+	   <vbox constraints="BorderLayout.CENTER">
+		   <label text="Search"/>
+		   <panel layout="FlowLayout">
+			   <textfield id="searchdata" columns="10"/>
+			   <button text="Go" action="menuAction"/>
+		   </panel>
+	   </vbox>
+	</panel>   
+    <panel constraints="BorderLayout.CENTER" layout="BorderLayout">
+		<label constraints="BorderLayout.NORTH" text="Radieschen Pages:" />
+		<scrollpane constraints="BorderLayout.CENTER">
+			<list  id="zikilist"/>
+		</scrollpane>
+	</panel>	
+</panel>
+</frame>
